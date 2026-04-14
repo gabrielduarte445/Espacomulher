@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+--lilaspadrão: #8E7CC3;
+--lilasdestaque:#6A5ACD;
+--lilasclaro:#E6E0F8;
+--rosapadrão: #f4a6b8;
+--rosaclaro:#f8c8d8;
+--rosaforte:#d97a9a;
+--ouropadrão: #d4af37;
+--ouroclaro:#e6c76e;
+--fundopricipal:#FFFFFF;
+--fundoalternativo:#efefef;
+--textoprincipal:#333333;
+--textosecundario:#666666;
+
+}
+header{
+    background-color: var(--lilasdestaque);
+    color:var(--fundopricipal);
+}
+
+
+
+body {
+  background-color: var(--fundopricipal);  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color:var(--textoprincipal)
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.btn-doacao{
+    background-color: var(--lilaspadrão);
+    color:var(--fundopricipal);
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-doacao:hover{
+    background-color: var(--rosaforte);
+    color: var(--fundopricipal);
+    transform: translateY(-2px);
+}
+.quem-somos{
+    background-color: var(--fundopricipal);
+}
+
+.projetos{
+    background-color: var(--fundoalternativo);
+}
+
+.impacto{
+    background-color: var(--fundopricipal);
+    
+}
+.depoimentos{
+    background-color: var(--fundoalternativo);
+}
+footer{
+    background-color: var(--lilasdestaque);
+    color:var(--fundopricipal);
+}
