@@ -6,7 +6,7 @@
 :root{
 --lilaspadrão: #8E7CC3;
 --lilasdestaque:#6A5ACD;
---lilasclaro:#E6E0F8;
+--lilasclaro:#c7b8f7;
 --rosapadrão: #f4a6b8;
 --rosaclaro:#f8c8d8;
 --rosaforte:#d97a9a;
@@ -40,6 +40,11 @@ a{
     color:inherit;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .btn-doacao{
     background-color: var(--lilaspadrão);
     color:var(--fundopricipal);
@@ -59,7 +64,7 @@ a{
 }
 
 .projetos{
-    background-color: var(--fundoalternativo);
+    background-color: var(--lilasclaro);
 }
 
 .impacto{
@@ -67,7 +72,7 @@ a{
     
 }
 .depoimentos{
-    background-color: var(--fundoalternativo);
+    background-color: var(--lilasclaro);
 }
 footer{
     background-color: var(--lilasdestaque);
