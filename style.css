@@ -4,25 +4,20 @@
   box-sizing: border-box;
 }
 :root{
---lilaspadrão: #8E7CC3;
+--lilaspadrao: #8E7CC3;
 --lilasdestaque:#6A5ACD;
 --lilasclaro:#c7b8f7;
---rosapadrão: #f4a6b8;
+--rosapadrao: #f4a6b8;
 --rosaclaro:#f8c8d8;
 --rosaforte:#d97a9a;
---ouropadrão: #d4af37;
+--ouropadrao: #d4af37;
 --ouroclaro:#e6c76e;
---fundopricipal:#FFFFFF;
+--fundoprincipal:#FFFFFF;
 --fundoalternativo:#efefef;
 --textoprincipal:#333333;
 --textosecundario:#666666;
 
 }
-header{
-    background-color: var(--lilasdestaque);
-    color:var(--fundopricipal);
-}
-
 
 
 body {
@@ -31,36 +26,67 @@ body {
   line-height: 1.6;
   color:var(--textoprincipal)
 }
-
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color:inherit;
-}
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
+header{
+    background-color: var(--lilasdestaque);
+    color:var(--fundoprincipal);
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:inherit;
+    font-weight: 500;
+}
+ul{
+    list-style: none;
+}
+
 .btn-doacao{
     background-color: var(--lilaspadrão);
-    color:var(--fundopricipal);
+    color:var(--fundoprincipal);
     padding: 12px 20px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
+
 
 .btn-doacao:hover{
     background-color: var(--rosaforte);
-    color: var(--fundopricipal);
+    color: var(--fundoprincipal);
     transform: translateY(-2px);
+    text-decoration: none;
 }
+
+section{
+    padding: 60px 0;
+}
+
 .quem-somos{
-    background-color: var(--fundopricipal);
+    background-color: var(--fundoprincipal);
 }
 
 .projetos{
@@ -68,7 +94,7 @@ a{
 }
 
 .impacto{
-    background-color: var(--fundopricipal);
+    background-color: var(--fundoprincipal);
     
 }
 .depoimentos{
@@ -76,5 +102,7 @@ a{
 }
 footer{
     background-color: var(--lilasdestaque);
-    color:var(--fundopricipal);
+    color:var(--fundoprincipal);
+    padding: 20px 0;
+    text-align: center;
 }
