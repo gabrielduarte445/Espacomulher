@@ -27,6 +27,7 @@ body {
   color:var(--textoprincipal)
 }
 .container{
+    width:90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -37,7 +38,7 @@ header{
     color:var(--fundoprincipal);
 }
 
-.container-header{
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@ header{
 }
 .logo {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .menu {
