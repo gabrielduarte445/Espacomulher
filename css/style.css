@@ -69,7 +69,22 @@ header{
 ul{
     list-style: none;
 }
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
+.card{
+        width: 300px;
+        background-color:#FFFFFF;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0,0, 0, 1);
+        transition: 0.3s;
+}
 .btn-doacao{
     background-color: var(--lilaspadrao);
     color:var(--fundoprincipal);
@@ -142,7 +157,6 @@ footer{
         display:block;
         align-self: flex-end;
     }
-    
     .menu.active{
         display:flex;
     }
@@ -152,5 +166,13 @@ footer{
     section{
         padding: 40px 0;
     }
-    
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
     }
