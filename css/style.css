@@ -19,7 +19,22 @@
 
 }
 
+@media(max-width:768px){
+.header-container{
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    flex-direction: column;
+}
+.logo{
+    font-style: 24px;
+}
+section{
+    padding: 40px;
+}
 
+}
 body {
   background-color: var(--fundopricipal);  
   font-family: Arial, sans-serif;
@@ -65,7 +80,7 @@ ul{
 }
 
 .btn-doacao{
-    background-color: var(--lilaspadrão);
+    background-color: var(--lilaspadrao);
     color:var(--fundoprincipal);
     padding: 12px 20px;
     border-radius: 8px;
