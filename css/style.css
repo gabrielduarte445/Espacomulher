@@ -153,11 +153,13 @@ section{
 }
 footer{
     background-color: var(--lilasdestaque);
-    color:var(--fundoprincipal);
+    opacity: 1;
     padding: 20px 0;
     text-align: center;
 }
-
+footer p{
+    color: var(--fundoprincipal);
+}
 @media(max-width:768px){
     header{
     position: relative;
