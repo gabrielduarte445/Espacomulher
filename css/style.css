@@ -22,8 +22,15 @@
 body {
     background-color: var(--fundoprincipal);  
     font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color:var(--textoprincipal)
+    line-height: 1.6;
+    color:var(--textoprincipal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }
 .container{
     width:90%;
@@ -79,6 +86,10 @@ h2{
     font-size: 26px;
     margin-bottom: 20px;
 }
+.projetos h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 h3{
     font-size: 20px;
@@ -98,14 +109,16 @@ ul{
     padding: 20px;
     flex-wrap: wrap;
 }
-
 .card{
         width: 300px;
         background-color:#FFFFFF;
         padding: 20px;
         border-radius: 12px;
-        box-shadow: 0px 4px 12px rgba(0,0, 0, 1);
-        transition:all 0.3 ease;
+        box-shadow: 0px 4px 12px rgba(0,0, 0, 0.5);
+        transition:all 0.3s ease;
+        height: auto;
+        flex: 1;
+        min-width: 280px;
     }
 
 .card h3{
