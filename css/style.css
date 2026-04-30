@@ -43,6 +43,8 @@ header{
     background-color: var(--lilasdestaque);
     color:var(--fundoprincipal);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1000;
 }
 
 .header-container{
@@ -83,6 +85,8 @@ header{
     position: relative;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .banner-overlay{
