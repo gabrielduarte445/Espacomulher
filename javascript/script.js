@@ -1,4 +1,6 @@
-const menusimbolo=document.getElementById('menu-toggle');
-const menu=document.querySelector('.menu');
 
-menusimbolo.addEventListener('click',()=>{menu.classList.toggle('active');});
+document.addEventListener('DOMContentLoaded',function(){
+    const menusimbolo=document.getElementById('menu-toggle');
+    const menu=document.querySelector('.menu');
+    menusimbolo.addEventListener('click',()=>
+    menu.classList.toggle('active'));});
