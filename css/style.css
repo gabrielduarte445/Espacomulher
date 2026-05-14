@@ -85,12 +85,28 @@ header{
     font-style: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 0;
+    left: 0;
+    background-color: var(--lilaspadrao); 
+    transition: width 0.3s ease-in-out;
 }
 .menu a:hover{
     opacity: 0.7;
-    color:var(--lilaspadrao);
+    color:var(--lilasdestaque);
 }
+.menu a:hover::after {
+    width: 100%;    
+}
+
 .banner{
     color: var(--fundoprincipal);
     background: url(../img/banner.jpg) center/cover no-repeat;
