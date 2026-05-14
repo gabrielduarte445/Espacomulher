@@ -9,10 +9,10 @@
 --lilasdestaque:#6A5ACD;
 --lilassuave:#f3f0ff;
 --rosapadrao: #f4a6b8;
---rosaclaro:#f8c8d8;
+--rosaclaro:#fff0f5;
 --rosaforte:#d97a9a;
 --ouropadrao: #d4af37;
---ouroclaro:#e6c76e;
+--ouroclaro:#faf3e0;
 --fundoprincipal:#FFFFFF;
 --fundoalternativo:#efefef;
 --textoprincipal:#333333;
@@ -225,13 +225,17 @@ section{
     
 .quem-somos{
         background-color: var(--fundoprincipal);
+        padding: 80px 0;
     }
-    
-.projetos{
-        background-color: var(--lilasclaro);
-    }
+
+.nossos-projetos {
+    background-color: #e0d8f0;
+    padding: 80px 0;
+    border-top: 1px solid #e0d8f0;
+    border-bottom: 1px solid #e0d8f0;
+}
 .pagina-projeto {
-    background: var(--fundoalternativo);
+    background: var(--rosaclaro);
     padding: 60px 0;
 }
 
@@ -274,7 +278,8 @@ section{
     transform: scale(1.05);
 }
 .impacto {
-    background-color: var(--lilas-suave);
+    background-color: var(--fundoprincipal);
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -290,11 +295,12 @@ section{
     color: var(--ouropadrao);
     margin-bottom: 5px;
 }
-impacto-cards{
+.impacto-cards{
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 .impacto-card{
     background: var(--lilaspadrao);
@@ -303,11 +309,11 @@ impacto-cards{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
     text-align: center;
 }
 
-impacto-card h3{
+.impacto-card h3{
     font-size: 28px;
     color: var(--ouropadrao);
 }
@@ -338,12 +344,13 @@ impacto-card h3{
     
 }
 .depoimentos{
-    background-color: var(--lilasclaro);
+    background-color: #e0d8f0;
+    padding: 80px 0;
 }
 footer{
     background-color: var(--lilasdestaque);
     opacity: 1;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 footer p{
@@ -378,20 +385,9 @@ footer p{
     height: 35px;
 }
 
-@media (max-width: 768px) {
-    .whatsapp-btn {
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-    }
-    .whatsapp-btn img {
-        width: 30px;
-    }
-}
 @media(max-width:768px){
     header{
-    position: relative;
+        position: relative;
     }
     .header-container{
         display: flex;
@@ -432,7 +428,7 @@ footer p{
         max-width: 100%;
     }
     .banner-content h1{
-    font-size: 26px;
+        font-size: 26px;
     }
     .banner-content p{
     font-size: 16px;
@@ -451,5 +447,14 @@ footer p{
     }
     p{
         font-size: 16px;
+    }
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-btn img {
+        width: 30px;
     }
     }
