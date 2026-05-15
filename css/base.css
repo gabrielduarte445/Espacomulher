@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+--lilaspadrao: #8E7CC3;
+--lilasdestaque:#6A5ACD;
+--lilassuave:#f3f0ff;
+--rosapadrao: #f4a6b8;
+--rosaclaro:#fff0f5;
+--rosaforte:#d97a9a;
+--ouropadrao: #d4af37;
+--ouroclaro:#faf3e0;
+--fundoprincipal:#FFFFFF;
+--fundoalternativo:#efefef;
+--textoprincipal:#333333;
+--textosecundario:#666666;
+--sombra-suave: 0 10px 30px rgba(142, 124, 195, 0.1);
+}
+
+body {
+    background-color: var(--fundoprincipal);  
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    color:var(--textoprincipal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--lilasdestaque);
+}
+main{
+    flex: 1;
+}
+.container{
+    width:90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section{
+    padding: 60px 0;
+}
+
+footer{
+    background-color: var(--lilasdestaque);
+    opacity: 1;
+    padding: 40px 0;
+    text-align: center;
+}
+footer p{
+    color: var(--fundoprincipal);
+}
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.projetos h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 20px;
+}
+

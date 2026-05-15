@@ -1,0 +1,83 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card{
+        width: 300px;
+        background:#FFFFFF;
+        padding: 40px;
+        border-radius: 20px;
+        border-bottom: 4px solid var(--rosapadrao);
+        box-shadow: var(--sombra-suave);
+        transition:0.3s;
+        height: auto;
+        flex: 1;
+        min-width: 280px;
+    }
+
+.card h3{
+    margin-bottom: 10px;
+}
+.card p{
+    margin-bottom: 15px;
+}
+
+
+.impacto {
+    background-color: var(--fundoprincipal);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.impacto-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.impacto-item h3 {
+    font-size: 3rem;
+    color: var(--ouropadrao);
+    margin-bottom: 5px;
+}
+.impacto-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.impacto-card{
+    background: var(--lilaspadrao);
+    color: var(--fundoprincipal);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.impacto-card h3{
+    font-size: 28px;
+    color: var(--ouropadrao);
+}
+
+.impacto-card p{
+    margin-top:10px;
+}
+
+.impacto{
+    background-color: var(--fundoprincipal);
+    
+}
+.depoimentos{
+    background-color: #e0d8f0;
+    padding: 80px 0;
+}
