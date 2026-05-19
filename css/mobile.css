@@ -70,4 +70,38 @@
     .whatsapp-btn img {
         width: 30px;
     }
+    /*pagina transparência*/
+        .secao-transparencia {
+        padding: 60px 0;
     }
+    
+    .transparencia-header h1 {
+        font-size: 2.2rem;
+    }
+
+     .acordeon-conteudo {
+        padding: 15px;
+    }
+    
+    .lista-downloads li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+    }
+    
+    .lista-downloads li:hover {
+        transform: none; /* Desativa o deslocamento lateral no mobile */
+    }
+
+    .doc-nome {
+        padding-right: 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .btn-download {
+        width: 100%; /* No mobile ele vira um bloco inteiro confortável para o clique */
+        padding: 10px;
+    }
+}

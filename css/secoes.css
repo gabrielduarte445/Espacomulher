@@ -81,3 +81,187 @@
     background-color: #e0d8f0;
     padding: 80px 0;
 }
+
+
+.secao-transparencia {
+    background-color: var(--fundoprincipal); /* Mantém o fundo limpo */
+    padding: 100px 0;
+}
+
+.transparencia-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.transparencia-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: var(--lilasdestaque);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.transparencia-header p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--textosecundario);
+}
+
+/* --- GRUPO DE ACORDEÕES --- */
+.acordeon-grupo {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço elegante entre os blocos */
+}
+
+/* Cada Bloco do Acordeão */
+.acordeon-item {
+    background-color: var(--fundoprincipal);
+    border: 1px solid rgba(142, 124, 195, 0.2); /* Borda fina e sofisticada em lilás */
+    border-radius: 6px; /* Cantos levemente suavizados (menos arredondado e mais profissional) */
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 4px rgba(142, 124, 195, 0.04);
+}
+
+/* Efeito Elegante de Foco/Aberto */
+.acordeon-item[open] {
+    border-color: var(--lilasdestaque);
+    box-shadow: 0 10px 30px rgba(142, 124, 195, 0.08);
+}
+
+/* O Cabeçalho Clivável do Acordeão */
+.acordeon-titulo {
+    padding: 24px 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--textoprincipal);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fundoprincipal);
+    transition: background-color 0.2s ease;
+}
+
+.acordeon-titulo::-webkit-details-marker {
+    display: none; /* Remove seta padrão em navegadores Webkit */
+}
+
+/* Efeito Hover sutil no título */
+.acordeon-titulo:hover {
+    background-color: var(--lilassuave);
+    color: var(--lilasdestaque);
+}
+
+/* O Ícone Seletor Personalizado (Sinal de +) */
+.acordeon-titulo::after {
+    content: '+';
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--lilaspadrao);
+    transition: transform 0.3s ease;
+}
+
+/* Quando expandido, muda para o sinal de menos e destaca a cor */
+.acordeon-item[open] .acordeon-titulo {
+    background-color: var(--lilassuave);
+    color: var(--lilasdestaque);
+    border-bottom: 1px solid rgba(142, 124, 195, 0.15);
+}
+
+.acordeon-item[open] .acordeon-titulo::after {
+    content: '−';
+    color: var(--lilasdestaque);
+}
+
+/* --- CONTEÚDO INTERNO (A LISTA DE DOCUMENTOS) --- */
+/* ==========================================================================
+   REFINAMENTO PROFISSIONAL: LISTA INTERNA DE DOCUMENTOS
+   ========================================================================== */
+
+/* Remove preenchimentos padrões e adiciona isolamento seguro */
+.acordeon-conteudo {
+    padding: 25px 35px;
+    background-color: #FFFFFF;
+}
+
+.lista-downloads {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Transforma cada linha em uma barra elegante com respiro nas laterais */
+.lista-downloads li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px; /* Adiciona espaçamento interno para o texto não colar nas bordas */
+    margin-bottom: 8px; /* Separa levemente uma linha da outra */
+    background-color: #FAFAFD; /* Fundo sutil para destacar cada documento */
+    border: 1px solid #EFEFFA;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+.lista-downloads li:last-child {
+    margin-bottom: 0;
+}
+
+/* Efeito Hover na linha: dá dinamismo ao passar o mouse */
+.lista-downloads li:hover {
+    background-color: #F6F3FF;
+    border-color: rgba(142, 124, 195, 0.4);
+    transform: translateX(4px); /* Deslocamento suave para a direita */
+}
+
+/* Ajuste e refinamento do Nome do Arquivo */
+.doc-nome {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3F3A52;
+    padding-right: 20px; /* Garante que o texto longo não colida com o botão */
+}
+
+/* Botão de Download Tipo "Badge/Pílula" (Compacto e Elegante) */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* Impede que o texto quebre em duas linhas */
+    padding: 8px 18px;
+    background-color: transparent;
+    border: 1px solid var(--lilaspadrao, #8E7CC3);
+    color: var(--lilaspadrao, #8E7CC3);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-radius: 20px; /* Formato pílula moderno */
+    transition: all 0.2s ease;
+}
+
+/* Efeito Hover do Botão */
+.btn-download:hover {
+    background-color: var(--lilaspadrao, #8E7CC3);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(142, 124, 195, 0.2);
+}
+
+/* Ajuste Responsivo Fino para Telas de Celular */
+@media (max-width: 600px) {
+
+}
