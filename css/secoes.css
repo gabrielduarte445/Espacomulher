@@ -84,7 +84,7 @@
 
 
 .secao-transparencia {
-    background-color: var(--fundoprincipal); /* Mantém o fundo limpo */
+    background-color: var(--fundoprincipal);
     padding: 100px 0;
 }
 
@@ -115,26 +115,24 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaço elegante entre os blocos */
+    gap: 20px;
 }
 
-/* Cada Bloco do Acordeão */
+
 .acordeon-item {
     background-color: var(--fundoprincipal);
-    border: 1px solid rgba(142, 124, 195, 0.2); /* Borda fina e sofisticada em lilás */
-    border-radius: 6px; /* Cantos levemente suavizados (menos arredondado e mais profissional) */
+    border: 1px solid rgba(142, 124, 195, 0.2); 
+    border-radius: 6px; 
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 2px 4px rgba(142, 124, 195, 0.04);
 }
 
-/* Efeito Elegante de Foco/Aberto */
 .acordeon-item[open] {
     border-color: var(--lilasdestaque);
     box-shadow: 0 10px 30px rgba(142, 124, 195, 0.08);
 }
 
-/* O Cabeçalho Clivável do Acordeão */
 .acordeon-titulo {
     padding: 24px 30px;
     font-family: "Montserrat", sans-serif;
@@ -153,16 +151,16 @@
 }
 
 .acordeon-titulo::-webkit-details-marker {
-    display: none; /* Remove seta padrão em navegadores Webkit */
+    display: none;
 }
 
-/* Efeito Hover sutil no título */
+
 .acordeon-titulo:hover {
     background-color: var(--lilassuave);
     color: var(--lilasdestaque);
 }
 
-/* O Ícone Seletor Personalizado (Sinal de +) */
+
 .acordeon-titulo::after {
     content: '+';
     font-family: "Montserrat", sans-serif;
@@ -184,12 +182,8 @@
     color: var(--lilasdestaque);
 }
 
-/* --- CONTEÚDO INTERNO (A LISTA DE DOCUMENTOS) --- */
-/* ==========================================================================
-   REFINAMENTO PROFISSIONAL: LISTA INTERNA DE DOCUMENTOS
-   ========================================================================== */
+/* CONTEÚDO INTERNO DOS ARQUIVOS*/
 
-/* Remove preenchimentos padrões e adiciona isolamento seguro */
 .acordeon-conteudo {
     padding: 25px 35px;
     background-color: #FFFFFF;
@@ -201,14 +195,13 @@
     margin: 0;
 }
 
-/* Transforma cada linha em uma barra elegante com respiro nas laterais */
 .lista-downloads li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px; /* Adiciona espaçamento interno para o texto não colar nas bordas */
-    margin-bottom: 8px; /* Separa levemente uma linha da outra */
-    background-color: #FAFAFD; /* Fundo sutil para destacar cada documento */
+    padding: 16px 20px; 
+    margin-bottom: 8px; 
+    background-color: #FAFAFD; 
     border: 1px solid #EFEFFA;
     border-radius: 6px;
     transition: all 0.25s ease;
@@ -218,28 +211,27 @@
     margin-bottom: 0;
 }
 
-/* Efeito Hover na linha: dá dinamismo ao passar o mouse */
+
 .lista-downloads li:hover {
     background-color: #F6F3FF;
     border-color: rgba(142, 124, 195, 0.4);
-    transform: translateX(4px); /* Deslocamento suave para a direita */
+    transform: translateX(4px); 
 }
 
-/* Ajuste e refinamento do Nome do Arquivo */
+
 .doc-nome {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #3F3A52;
-    padding-right: 20px; /* Garante que o texto longo não colida com o botão */
+    padding-right: 20px; 
 }
 
-/* Botão de Download Tipo "Badge/Pílula" (Compacto e Elegante) */
 .btn-download {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap; /* Impede que o texto quebre em duas linhas */
+    white-space: nowrap; 
     padding: 8px 18px;
     background-color: transparent;
     border: 1px solid var(--lilaspadrao, #8E7CC3);
@@ -250,18 +242,12 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    border-radius: 20px; /* Formato pílula moderno */
+    border-radius: 20px; 
     transition: all 0.2s ease;
 }
 
-/* Efeito Hover do Botão */
 .btn-download:hover {
     background-color: var(--lilaspadrao, #8E7CC3);
     color: #FFFFFF;
     box-shadow: 0 4px 12px rgba(142, 124, 195, 0.2);
-}
-
-/* Ajuste Responsivo Fino para Telas de Celular */
-@media (max-width: 600px) {
-
 }
