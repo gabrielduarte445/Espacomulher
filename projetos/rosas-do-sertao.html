@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/elementos.css">
     <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/secoes.css">
     <title>Projeto Rosas do Sertão</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
         <nav id="nav">
             <ul class="menu">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../subsecoes/quem-somos.html">Quem somos</a></li>>
+                <li><a href="../subsecoes/quem-somos.html">Quem somos</a></li>
                 <li><a href="../subsecoes/noticias.html">Notícias</a></li>
                 <li><a href="../subsecoes/apoiar.html" class="btn-destaque-menu">Como ajudar</a></li>
                 <li><a href="../subsecoes/transparencia.html">Transparência</a></li>
@@ -40,14 +41,18 @@
 <main>
     <section class="pagina-projeto">
         <div class="container-projeto">
-
+        </header>
+        <div class="projeto-hero">
+          <div class="container">
+            <span class="eyebrow">Nossos projetos</span>
             <h1>Rosas do Sertão</h1>
+          </div>
+        </div>
+        <main>
+          <section class="pagina-projeto">
+            <div class="container-projeto">
+              <p class="descricao"> O projeto Rosas do Sertão atua no acolhimento de mulheres em tratamento contra o câncer, especialmente aquelas que precisam se deslocar para outras cidades em busca de atendimento. A iniciativa oferece apoio emocional, escuta qualificada e mobilização de recursos, garantindo mais dignidade durante um momento de extrema vulnerabilidade. Além disso, promove ações de conscientização, como campanhas do Outubro Rosa, fortalecendo a autoestima e criando uma rede de apoio entre as participantes.</p>
 
-            <p class="descricao">
-                O projeto Rosas do Sertão atua no acolhimento de mulheres em tratamento contra o câncer, especialmente aquelas que precisam se deslocar para outras cidades em busca de atendimento. A iniciativa oferece apoio emocional, escuta qualificada e mobilização de recursos, garantindo mais dignidade durante um momento de extrema vulnerabilidade. Além disso, promove ações de conscientização, como campanhas do Outubro Rosa, fortalecendo a autoestima e criando uma rede de apoio entre as participantes.
-            </p>
-
-            <!-- GALERIA -->
             <div class="galeria">
                 <img src="../img/rosas1.jpg" alt="Imagem 1">
                 <img src="../img/rosas2.jpg" alt="Imagem 2">
@@ -55,12 +60,14 @@
 
             <h2>Impacto</h2>
             <div class="impacto-cards">
-                <div class="impacto-card">
-                    <p><h3>+120</h3> mulheres atendidas</p>
-                </div>
-                <div class="impacto-card">
-                    <p><h3>+40</h3> ações de conscientização realizadas</p>
-                </div>
+              <div class="impacto-card">
+                <h3>+120</h3>
+                <p>mulheres atendidas</p>
+              </div>
+              <div class="impacto-card">
+                <h3>+40</h3>
+                <p>ações de conscientização realizadas</p>
+              </div>
             </div>
 
             <h2>Como funciona</h2>
@@ -73,9 +80,10 @@
                Você pode contribuir com doações ou apoiar na divulgação das ações, ajudando a ampliar o alcance do projeto e fortalecer a rede de apoio às mulheres atendidas.
             </p>
 
-            <a href="../subsecoes/contato.html" class="btn btn-destaque">
-                Quero ajudar
-            </a>
+            <div class="projeto-cta">
+                <p>Ajude a ampliar o alcance desse projeto.</p>
+                <a href="../subsecoes/apoiar.html" class="btn btn-destaque">Quero ajudar</a>
+            </div>
 
         </div>
     </section>

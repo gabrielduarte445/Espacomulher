@@ -112,8 +112,27 @@ p{
 }
 
 
-
-
+.container-projeto h2 {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid var(--borda);
+  }
+  .container-projeto h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+  .projeto-cta {
+    background: var(--rosa-suave, #FDEDF3);
+    border-radius: 8px;
+    padding: 34px;
+    text-align: center;
+    margin: 40px 0 60px;
+  }
+  .projeto-cta p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--textoprincipal);
+  }
 
 
 

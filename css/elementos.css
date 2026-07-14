@@ -29,6 +29,9 @@
 .btn-destaque:hover, .btn-enviar:hover {
   background-color: var(--rosa-escuro);
 }
+.card, .contato-formulario, .pix-card, .lista-downloads li:hover {
+  box-shadow: var(--sombra-suave);
+}
 h2 {
   margin-bottom: 24px;
 }
@@ -51,11 +54,46 @@ h2 {
     transition: all 0.3s ease;
 }
 
+  /*impacto dos projetos*/
+  .impacto-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .impacto-card {
+    background: var(--creme);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 24px 28px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  .impacto-card h3 {
+    font-size: 32px;
+    color: var(--rosa);
+    margin-bottom: 6px;
+  }
+  .impacto-card p {
+    font-size: 14px;
+    color: var(--textosecundario);
+  }
+
+  
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 30px o 40px;
+}
+
 .galeria img{
     width: 100%;
+    aspect-ratio: 4/3;
     height: 260px;
     object-fit: cover;
-    border-radius: 14px;
+    border-radius: 6px;
     transition: 0.40s;
 }
 .galeria img:hover {
@@ -100,4 +138,21 @@ h2 {
   text-transform: uppercase;
   color: var(--rosapadrao);
   font-weight: 700;
+}
+
+.selos-credibilidade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+.selo-item {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--azul);
+  border: 1px solid var(--dourado);
+  background: rgba(184,145,47,0.08);
+  padding: 9px 16px;
+  border-radius: 4px;
 }

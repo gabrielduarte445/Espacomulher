@@ -108,9 +108,23 @@
     line-height: 1.8;
     color: var(--textosecundario);
 }
+.container-projeto {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .descricao {
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--textosecundario);
+    margin-bottom: 40px;
+  }
 
 .secao-apoiar { padding: 80px 0; }
+
 .apoiar-header { text-align: center; max-width: 700px; margin: 0 auto 50px; }
+
 .apoiar-opcoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -156,6 +170,47 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.projeto-hero {
+    background: var(--azul);
+    color: #fff;
+    padding: 70px 0 50px;
+    text-align: center;
+  }
+  .projeto-hero .eyebrow {
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .projeto-hero h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    margin: 10px 0 0;
+  }
+
+  /*impactos da home*/
+.impacto-numeros {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .impacto-numero { text-align: center; }
+  .impacto-numero strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: var(--rosa);
+  }
+  .impacto-numero span {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--textosecundario);
+  }
+
 /* --- GRUPO DE ACORDEÕES --- */
 .acordeon-grupo {
     max-width: 900px;
@@ -451,8 +506,6 @@
     border-color: var(--lilaspadrao, #8E7CC3);
     box-shadow: 0 0 0 3px rgba(142, 124, 195, 0.15);
 }
-
-/* Botão de Envio Sólido e Imponente */
 .btn-enviar {
     width: 100%;
     padding: 14px;
