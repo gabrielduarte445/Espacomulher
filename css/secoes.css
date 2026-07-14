@@ -109,6 +109,53 @@
     color: var(--textosecundario);
 }
 
+.secao-apoiar { padding: 80px 0; }
+.apoiar-header { text-align: center; max-width: 700px; margin: 0 auto 50px; }
+.apoiar-opcoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+.apoiar-opcao {
+  background: #FAFAFD;
+  border: 1px solid rgba(142,124,195,0.2);
+  border-radius: 8px;
+  padding: 30px;
+}
+.pix-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid rgba(142,124,195,0.2);
+  border-top: 4px solid var(--rosapadrao);
+  border-radius: 8px;
+  padding: 30px;
+}
+.pix-chave {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: #f3f0ff;
+  border: 1px dashed var(--lilaspadrao);
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+.btn-copiar {
+  background: var(--lilasdestaque);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 /* --- GRUPO DE ACORDEÕES --- */
 .acordeon-grupo {
     max-width: 900px;
