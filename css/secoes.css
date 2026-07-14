@@ -27,7 +27,30 @@
     margin-bottom: 15px;
 }
 
-
+.quem-somos {
+  background: #FFFFFF;
+}
+.nossos-projetos {
+  background: var(--creme);
+}
+.impacto {
+  background: var(--azul); 
+  color: #fff;
+}
+.impacto h2,
+.impacto p {
+  color: #fff;
+}
+.depoimentos {
+  background: #FDEDF3; 
+}
+.cta {
+  background: var(--azul-escuro, #101A42);
+  color: #fff;
+}
+.cta h2, .cta p {
+  color: #fff;
+}
 .impacto {
     background-color: var(--fundoprincipal);
     padding: 60px 0;
@@ -228,7 +251,11 @@
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 2px 4px rgba(142, 124, 195, 0.04);
+    border-left: 4px solid var(--sombra-suave);
 }
+.acordeon-item:nth-of-type(1) { border-left-color: var(--azul); }
+.acordeon-item:nth-of-type(2) { border-left-color: var(--dourado); }
+.acordeon-item:nth-of-type(3) { border-left-color: var(--rosa); }
 
 .acordeon-item[open] {
     border-color: var(--lilasdestaque);
@@ -330,28 +357,14 @@
 }
 
 .btn-download {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap; 
-    padding: 8px 18px;
-    background-color: transparent;
-    border: 1px solid var(--lilaspadrao, #8E7CC3);
-    color: var(--lilaspadrao, #8E7CC3);
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    border-radius: 20px; 
-    transition: all 0.2s ease;
+  background: var(--azul);
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  font-weight: 700;
 }
-
 .btn-download:hover {
-    background-color: var(--lilaspadrao, #8E7CC3);
-    color: #FFFFFF;
-    box-shadow: 0 4px 12px rgba(142, 124, 195, 0.2);
+  background: var(--rosa);
 }
 .secao-contato {
     background-color: #FFFFFF;
@@ -381,7 +394,7 @@
 /* Distribuição em duas colunas simétricas */
 .contato-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 0.8fr 1.2fr;
     gap: 60px;
     max-width: 1000px;
     margin: 0 auto;
@@ -457,7 +470,8 @@
     border: 1px solid rgba(142, 124, 195, 0.15);
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(142, 124, 195, 0.03);
+    box-shadow: var(--sombra-suave);
+    border-top:4px solid var(--rosa);
 }
 
 .contato-formulario h2 {

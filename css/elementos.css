@@ -156,3 +156,17 @@ h2 {
   padding: 9px 16px;
   border-radius: 4px;
 }
+.doc-meta {
+  display: block;
+  font-size: 11px;
+  color: var(--textosecundario);
+  margin-top: 3px;
+}
+.transparencia-compromisso {
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--textosecundario);
+  max-width: 500px;
+  margin: -30px auto 40px;
+}
