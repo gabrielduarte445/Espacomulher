@@ -1,10 +1,11 @@
 header{
-    background-color: var(--lilassuave);
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    background-color:white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     position: sticky;
     top:0;
     z-index: 1000;
     padding: 15px 0;
+    opacity: 1;
 }
 
 .header-container{

@@ -8,18 +8,32 @@
         align-items: center;
         padding: 15px 20px;
     }
-    .menu{
-        background: var(--lilasdestaque);
-        position: absolute;
-        top:100%;
-        left:0;
-        display: none;
-        flex-direction: column;
-        color: inherit;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-        gap: 10px;
+    .menu {
+    background: var(--azul);
+    position: static;      /* tira do "flutuante", volta ao fluxo normal */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+
+    .menu.active {
+    display: flex;
+    max-height: 500px;   /* alto o suficiente para caber todos os itens */
+    padding: 20px 24px;
+    }
+
+    .menu li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .menu li:last-child {
+    border-bottom: none;
     }
     .menu-simbolo{
         position: relative;
