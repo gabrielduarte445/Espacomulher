@@ -1,5 +1,5 @@
 header{
-    background-color: var(--lilassuave);
+    background-color: #FFFFFF;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     position: sticky;
     top:0;
@@ -36,7 +36,7 @@ header{
 
 .menu a {
     text-decoration: none;
-    color: var(--textoprincipal);
+    color: var(--textoprincipal, #23262F);
     font-weight: 500;
     font-style: 14px;
     text-transform: uppercase;
@@ -51,13 +51,12 @@ header{
     width: 0;
     height: 2px; 
     bottom: 0;
-    left: 0;
-    background-color: var(--lilaspadrao); 
+    left: 0; 
+    background-color: var(--rosa);
     transition: width 0.3s ease-in-out;
 }
 .menu a:hover{
-    opacity: 0.7;
-    color:var(--lilasdestaque);
+    color:var(--rosa);
 }
 .menu a:hover::after {
     width: 100%;    
