@@ -13,6 +13,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    gap:24px;
+    flex-wrap: nowrap;
 }
 
 .logo {
