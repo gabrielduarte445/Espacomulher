@@ -54,7 +54,6 @@
     flex-wrap: wrap;
 }
 .impacto-card{
-    background: var(--lilaspadrao);
     color: var(--fundoprincipal);
     padding: 25px;
     border-radius: 12px;
@@ -426,8 +425,8 @@ blockquote {
 
 /* Quando expandido, muda para o sinal de menos e destaca a cor */
 .acordeon-item[open] .acordeon-titulo {
-    background-color: var(--lilassuave);
-    color: var(--lilasdestaque);
+    background-color: var(--creme);
+    color: var(--rosa);
     border-bottom: 1px solid rgba(142, 124, 195, 0.15);
 }
 
@@ -505,7 +504,7 @@ blockquote {
 .contato-header h1 {
     font-family: "Playfair Display", serif;
     font-size: 2.8rem;
-    color: var(--lilasdestaque, #4A3E7D);
+    color: var(--azul);
     margin-bottom: 15px;
 }
 
@@ -537,7 +536,7 @@ blockquote {
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--lilasdestaque, #4A3E7D);
+    color: var(--azul);
     margin-bottom: 20px;
     border-bottom: 2px solid rgba(142, 124, 195, 0.2);
     padding-bottom: 8px;
@@ -552,14 +551,14 @@ blockquote {
 }
 
 .info-item a {
-    color: var(--lilaspadrao, #8E7CC3);
+    color: var(--rosa);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .info-item a:hover {
-    color: var(--lilasdestaque, #4A3E7D);
+    color: var(--azul);
     text-decoration: underline;
 }
 
@@ -575,7 +574,7 @@ blockquote {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--lilaspadrao, #8E7CC3);
+    color: var(--rosa);
     border: 1px solid rgba(142, 124, 195, 0.3);
     padding: 8px 16px;
     border-radius: 4px;
@@ -584,9 +583,9 @@ blockquote {
 }
 
 .link-rede:hover {
-    background-color: var(--lilaspadrao, #8E7CC3);
+    background-color: var(--rosa);
     color: #FFFFFF;
-    border-color: var(--lilaspadrao, #8E7CC3);
+    border-color: var(--rosa);
 }
 
 /* Estilo da Caixa do Formulário */
@@ -642,13 +641,13 @@ blockquote {
 .form-grupo input:focus,
 .form-grupo textarea:focus {
     outline: none;
-    border-color: var(--lilaspadrao, #8E7CC3);
-    box-shadow: 0 0 0 3px rgba(142, 124, 195, 0.15);
+    border-color: var(--rosa);
+    box-shadow: 0 0 0 3px rgba(227,28,107,0.15);
 }
 .btn-enviar {
     width: 100%;
     padding: 14px;
-    background-color: var(--lilaspadrao, #8E7CC3);
+    background-color: var(--rosa);
     border: none;
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
@@ -663,6 +662,6 @@ blockquote {
 }
 
 .btn-enviar:hover {
-    background-color: var(--lilasdestaque, #4A3E7D);
+    background-color: var(--azul);
     box-shadow: 0 4px 12px rgba(74, 62, 125, 0.2);
 }
