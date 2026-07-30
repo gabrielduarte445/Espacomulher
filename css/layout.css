@@ -32,8 +32,9 @@ header{
     display: none;
     font-size: 35px;
     cursor: pointer;
-    background: var(--lilasdestaque);
-
+    background: transparent;
+    border: none;
+    padding: 0;
 }
 
 .menu a {

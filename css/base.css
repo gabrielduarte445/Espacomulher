@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* altura aproximada do header sticky */
+}
 :root{
   --azul: #1B2A63;         /* cor principal - autoridade/confiança */
   --azul-escuro: #101A42;  /* fundos escuros, hover */
@@ -36,6 +40,15 @@ h1, h2, h3 {
 h1 { font-size: 34px; line-height: 1.25; }
 h2 { font-size: 26px; margin-bottom: 20px; }
 h3 { font-size: 19px; }
+h1 {
+  font-size: clamp(24px, 5vw + 1rem, 34px);
+}
+h2 {
+  font-size: clamp(20px, 4vw + 0.5rem, 28px);
+}
+.banner-content h1 {
+  font-size: clamp(26px, 6vw + 1rem, 52px);
+}
 
 .pagina-titulo h1,
 .transparencia-header h1,
