@@ -53,6 +53,9 @@
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
+.menu-fechar {
+  display: none;
+}
 .impacto-card{
     color: var(--fundoprincipal);
     padding: 25px;
@@ -147,7 +150,6 @@
 }
 
 .eyebrow,
-
 h1 {
   text-align: center;
   
@@ -224,9 +226,15 @@ blockquote {
   margin: 15px 0;
   flex-wrap: wrap;
 }
+.cta .btn {
+  margin-top: 25px; /* ajuste até o espaçamento ficar bom */
+}
+.cta p {
+  margin-bottom: 25px;
+}
 .btn-copiar {
   background: var(--lilasdestaque);
-  color: #fff;
+  color: var(--azul);
   border: none;
   padding: 8px 16px;
   border-radius: 4px;

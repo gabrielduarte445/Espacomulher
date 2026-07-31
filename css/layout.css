@@ -10,12 +10,15 @@ header{
 
 .header-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 0;
     gap:24px;
     flex-wrap: nowrap;
 }
+  #nav {
+    margin-left: 60px;
+    }
 
 .logo {
     font-weight: 700;
@@ -34,8 +37,16 @@ header{
     cursor: pointer;
     background: transparent;
     border: none;
-    padding: 0;
+    width: 30px;
+    height: 22px;
 }
+.menu-simbolo .barra {
+  height: 2.5px;
+}
+
+.menu-simbolo .barra:nth-child(1) { top: 0; }
+.menu-simbolo .barra:nth-child(2) { top: 11.75px; }
+.menu-simbolo .barra:nth-child(3) { top: 23.5px; }
 
 .menu a {
     text-decoration: none;
@@ -91,6 +102,7 @@ header{
     color: var(--fundoprincipal);
     margin-bottom: 20px;
     line-height: 1.2;
+    text-align: left;
 }
 
 .banner-content p{

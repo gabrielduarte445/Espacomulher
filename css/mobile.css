@@ -122,6 +122,7 @@
 
   
   .menu-fechar {
+    display: block;
     position: absolute;
     top: 20px;
     right: 24px;
@@ -149,6 +150,7 @@
     }
     .banner-content h1{
         font-size: 26px;
+        text-align: center;
     }
     .banner-content p{
     font-size: 16px;

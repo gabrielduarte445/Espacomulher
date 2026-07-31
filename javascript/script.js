@@ -29,4 +29,5 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', fecharMenu);
   });
+  
 });
