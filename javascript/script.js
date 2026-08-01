@@ -29,5 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', fecharMenu);
   });
+  const btnCopiar = document.getElementById('btn-copiar-pix');
   
+  if (btnCopiar) {
+  btnCopiar.addEventListener('click', function () {
+    const chave = document.getElementById('chave-pix').innerText;
+    navigator.clipboard.writeText(chave).then(() => {
+      btnCopiar.innerText = 'Copiado!';
+      setTimeout(() => { btnCopiar.innerText = 'Copiar chave'; }, 2000);
+    });
+  });
+}
 });
