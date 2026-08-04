@@ -112,8 +112,9 @@
 .container-projeto {
     max-width: 760px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 50px 24px 70px;
   }
+
   .descricao {
     text-align: left;
     font-size: 17px;
@@ -493,6 +494,7 @@ blockquote {
   border: none;
   padding: 9px 20px;
   font-weight: 700;
+  text-decoration: none 
 }
 .btn-download:hover {
   background: var(--rosa);
