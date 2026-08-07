@@ -60,33 +60,44 @@
                         <h2>Nossas Redes Sociais</h2>
                         <div class="redes-links">
                             <a href="https://instagram.com/perfildaassociação" target="_blank" rel="noopener noreferrer" class="link-rede">Instagram</a>
-                            <a href="https://facebook.com/paginafacebook" target="_blank" rel="noopener noreferrer" class="link-rede">Facebook</a>
                             <a href="https://wa.me/5574999631468?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" class="link-rede">Whatsapp</a>
                         </div>
                     </div>
                 </div>
-    <div class="contato-formulario">
-                    <h2>Envie uma mensagem</h2>
-                    <form action="#" method="POST" class="form-contato">
-                       <div class="form-grupo">
-                           <label for="nome">Nome Completo</label>
-                           <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                       </div> 
-                       
-                       <div class="form-grupo">
-                           <label for="email">E-mail Corporativo ou Pessoal</label>
-                           <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-                       </div> 
-                       
-                       <div class="form-grupo">
-                           <label for="mensagem">Mensagem/ Proposta de parceria</label>
-                           <textarea placeholder="Conte um pouco sobre sua dúvida, ideia de parceria ou como podemos ajudar..."></textarea>
-                       </div> 
-                       
-                        <button type="submit" class="btn-enviar">Enviar mensagem</button>
-                        <p class="contato-aviso">Respondemos em até 2 dias úteis.</p>
-    
-                    </form>
+    <div id="contato-formulario" class="contato-formulario">
+<!-- FORMULÁRIO (sem action/method locais para não dar erro 405) -->
+    <form id="meuFormulario" class="form-contato">
+        <h2>Envie uma mensagem</h2>
+
+        <div class="form-grupo">
+            <!-- for="nome" aponta exatamente para id="nome" -->
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div> 
+
+        <div class="form-grupo">
+            <!-- for="email" aponta exatamente para id="email" -->
+            <label for="email">E-mail Corporativo ou Pessoal</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        </div> 
+
+        <div class="form-grupo">
+            <!-- for="mensagem" aponta exatamente para id="mensagem" -->
+            <label for="mensagem">Mensagem/ Proposta de parceria</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre sua dúvida, ideia de parceria ou como podemos ajudar..." required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+        </div> 
+
+        <button type="submit" id="btnEnviar" class="btn-enviar">Enviar mensagem</button>
+        <p class="contato-aviso">Respondemos em até 2 dias úteis.</p>
+    </form>
+                <div id="mensagemSucesso" class="cartao-obrigado-dom" style="display: none;">
+                    <div class="icone-check">✓</div>
+                    <h2>Mensagem Enviada!</h2>
+                    <p class="subtitulo">Agradecemos o seu contato com o Espaço Mulher São Gabriel.</p>
+                    <p class="aviso">Respondemos em até <strong>2 dias úteis</strong>.</p>
+                    <button type="button" id="btnEnviarOutra" class="btn-voltar">Enviar outra mensagem</button>
+                    </div>
                 </div>
 
             </div>

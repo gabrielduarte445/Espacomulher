@@ -11,7 +11,74 @@
   text-decoration: none;
   transition: all 0.25s ease;
 }
+/* Estilo do cartão de sucesso dinâmico (DOM) */
+.cartao-obrigado-dom {
+    text-align: center;
+    padding: 30px 20px;
+    animation: fadeIn 0.4s ease-in-out;
+}
 
+.icone-check {
+    width: 60px;
+    height: 60px;
+    background-color: #fce7f3;
+    color: #e61d63;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.cartao-obrigado-dom h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.cartao-obrigado-dom .subtitulo {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.cartao-obrigado-dom .aviso {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.btn-voltar {
+    width: 100%;
+    padding: 12px;
+    background-color: #e61d63;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.btn-voltar:hover {
+    background-color: #c2124d;
+}
+
+/* Animação suave para o surgimento do elemento no DOM */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .btn {
   background-color: var(--azul);
   color: #fff;
