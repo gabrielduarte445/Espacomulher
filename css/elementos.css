@@ -248,6 +248,18 @@ h2 {
   max-width: 500px;
   margin: -30px auto 40px;
 }
+.acordeon-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.acordeon-titulo i {
+  color: var(--rosa);
+  font-size: 1em;
+  width: 1.2em;
+  text-align: center;
+}
 .instagram-feed {
   text-align: center;
   padding: 60px 0;
