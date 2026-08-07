@@ -157,6 +157,36 @@ h2 {
     color: var(--textosecundario);
   }
 
+  .depoimentos {
+  padding: 60px 0;
+}
+
+.depoimento-card {
+  background: #fff;
+  border-left: 4px solid var(--rosa);
+  border-radius: 8px;
+  padding: 24px 32px;
+  max-width: 700px;
+  margin: 32px auto 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.depoimento-texto {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--azul-escuro);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.depoimento-autor {
+  display: block;
+  text-align: right;
+  font-weight: 600;
+  color: var(--rosa);
+  font-size: 0.9rem;
+}
+
   
 .galeria {
   display: grid;
