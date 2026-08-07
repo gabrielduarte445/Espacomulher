@@ -248,3 +248,25 @@ h2 {
   max-width: 500px;
   margin: -30px auto 40px;
 }
+.instagram-feed {
+  text-align: center;
+  padding: 60px 0;
+}
+.instagram-feed h2 {
+  margin-bottom: 8px;
+}
+.instagram-feed-subtitulo {
+  color: var(--azul-escuro);
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+.instagram-feed {
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Só contém o overflow do widget, sem forçar largura nos itens internos */
+.instagram-feed .container {
+  overflow-x: hidden;
+  max-width: 100%;
+}

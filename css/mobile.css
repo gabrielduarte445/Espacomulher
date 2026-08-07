@@ -44,7 +44,9 @@
     display: contents; 
   }
 
- 
+   body {
+    overflow-x: hidden;
+  }
   .menu-backdrop {
     position: fixed;
     inset: 0;
