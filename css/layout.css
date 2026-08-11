@@ -31,13 +31,18 @@ header{
     align-items: center;
 }
 .menu-simbolo{
+    color: var(--azul);
     display: none;
-    font-size: 35px;
+    font-size: 24px;
     cursor: pointer;
     background: transparent;
     border: none;
-    width: 30px;
-    height: 22px;
+    line-height: 1;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
 }
 .menu-simbolo .barra {
   height: 2.5px;
