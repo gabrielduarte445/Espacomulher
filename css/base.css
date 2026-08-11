@@ -9,15 +9,16 @@ html {
   scroll-padding-top: 80px; /* altura aproximada do header sticky */
 }
 :root{
-  --azul: #1B2A63;         /* cor principal - autoridade/confiança */
-  --azul-escuro: #101A42;  /* fundos escuros, hover */
-  --rosa: #E31C6B;         /* cor de destaque - ações, links, emoção */
-  --rosa-escuro: #B71354;  /* hover da cor de destaque */
+  --azul: #C2185B;         /* rosa principal — títulos, header, links */
+  --azul-escuro: #8E1249;  /* rosa escuro — hover, fundos escuros, footer */
+  --rosa: #F06292;         /* rosa claro — destaque, botões de ação */
+  --rosa-escuro: #D6478B;  /* hover do botão de destaque */
   --dourado: #B8912F;      /* só para selos/detalhes institucionais, use pouco */
-  --creme: #FBF9F5;        /* fundo alternativo, mais quente que branco puro */
+  --creme: #FFF5F8;        /* fundo alternativo, mais quente que branco puro */
   --fundoprincipal: #FFFFFF;
-  --textoprincipal: #23262F;
-  --textosecundario: #5B5F6C;
+  --textoprincipal:  #2B2230; /* preto levemente puxado pro roxo, combina mais com rosa que preto puro */
+  --textosecundario: #6b5a63;
+  --textofooter:#f1f1f1;
   --borda: rgba(27,42,99,0.12);
   --sombra-suave: 0 10px 30px rgba(27,42,99,0.08);
 }
@@ -78,7 +79,7 @@ section{
 
 footer{
     background-color: var(--azul-escuro);
-    color: var(--fundoprincipal);
+    color: var(--textofooter);
     opacity: 1;
     padding: 40px 0;
     text-align: center;
