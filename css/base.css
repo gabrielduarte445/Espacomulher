@@ -9,12 +9,12 @@ html {
   scroll-padding-top: 80px; /* altura aproximada do header sticky */
 }
 :root{
-  --azul: #C2185B;         /* rosa principal — títulos, header, links */
-  --azul-escuro: #8E1249;  /* rosa escuro — hover, fundos escuros, footer */
-  --rosa: #F06292;         /* rosa claro — destaque, botões de ação */
-  --rosa-escuro: #D6478B;  /* hover do botão de destaque */
-  --dourado: #B8912F;      /* só para selos/detalhes institucionais, use pouco */
-  --creme: #FFF5F8;        /* fundo alternativo, mais quente que branco puro */
+  --azul: #be1d66;        /* cor principal - títulos, header, textos de destaque */
+  --azul-escuro: #6d173c; /* hover / fundos escuros - versão mais escura da principal */
+  --rosa: #F13D8C;        /* cor de ação - botões, links, CTAs */
+  --rosa-escuro: #D6237A; /* hover do botão de destaque */
+  --dourado: #B8912F;     /* mantido - explico abaixo */
+  --creme: #FDF3F7;        /* fundo alternativo, mais quente que branco puro */
   --fundoprincipal: #FFFFFF;
   --textoprincipal:  #2B2230; /* preto levemente puxado pro roxo, combina mais com rosa que preto puro */
   --textosecundario: #6b5a63;
