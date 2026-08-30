@@ -63,24 +63,40 @@
             <a href="contato.html" class="btn">Quero ser voluntária(o)</a>
           </div>
         </div>
-  
-        <div class="pix-card">
-          <h3>Chave PIX</h3>
-          <p>CNPJ</p>
-          <div class="pix-chave">
-            <code id="chave-pix">espacomulhersaogabriel@gmail.com</code>
-            <button class="btn-copiar" id="btn-copiar-pix">Copiar chave</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <div class="pix-dinamico">
+  <h3>Escolha um valor</h3>
+  <div class="pix-valores">
+    <button class="pix-valor-btn" data-valor="20">R$ 20</button>
+    <button class="pix-valor-btn" data-valor="50">R$ 50</button>
+    <button class="pix-valor-btn" data-valor="100">R$ 100</button>
+  </div>
+
+  <div class="pix-valor-custom">
+    <label for="pix-valor-input">Ou digite outro valor:</label>
+    <input type="number" id="pix-valor-input" placeholder="Ex: 35" min="1" step="0.01">
+    <button id="pix-gerar-btn">Gerar QR Code</button>
+  </div>
+
+  <div id="pix-resultado" class="pix-resultado" style="display:none;">
+    <div id="pix-qrcode"></div>
+    <p>Ou copie o código:</p>
+    <div class="pix-copia-cola">
+      <span id="pix-payload-texto"></span>
+      <button id="pix-copiar-payload">Copiar</button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</main>
 
 <footer>
-    <div class="container">
-        <p>© 2026 Espaço Mulher São Gabriel</p>
-    </div>
+  <div class="container">
+    <p>© 2026 Espaço Mulher São Gabriel</p>
+  </div>
 </footer>
+<!-- Biblioteca pra desenhar o QR Code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="../javascript/script.js"></script>
 </body>
 </html>

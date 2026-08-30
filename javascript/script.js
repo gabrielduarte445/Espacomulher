@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-});
+
 // --- 4. MODAL "LEIA MAIS" DAS NOTÍCIAS ---
 const noticias = {
   "1": {
@@ -174,4 +174,80 @@ if (modalOverlay) modalOverlay.addEventListener('click', fecharNoticiaModal);
 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') fecharNoticiaModal();
+});
+// --- 5. PIX DINÂMICO ---
+const pixValorBtns = document.querySelectorAll('.pix-valor-btn');
+const pixValorInput = document.getElementById('pix-valor-input');
+const pixGerarBtn = document.getElementById('pix-gerar-btn');
+const pixResultado = document.getElementById('pix-resultado');
+const pixQrcodeDiv = document.getElementById('pix-qrcode');
+const pixPayloadTexto = document.getElementById('pix-payload-texto');
+const pixCopiarBtn = document.getElementById('pix-copiar-payload');
+
+async function gerarPix(valor) {
+  if (pixGerarBtn) {
+    pixGerarBtn.disabled = true;
+    pixGerarBtn.innerText = 'Gerando...';
+  }
+
+  try {
+    const resposta = await fetch('/.netlify/functions/gerar-pix', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ valor })
+    });
+
+    const dados = await resposta.json();
+
+    if (!resposta.ok) {
+      alert(dados.erro || 'Não foi possível gerar o PIX. Tente novamente.');
+      return;
+    }
+
+    pixQrcodeDiv.innerHTML = '';
+    new QRCode(pixQrcodeDiv, {
+      text: dados.payload,
+      width: 220,
+      height: 220
+    });
+
+    pixPayloadTexto.innerText = dados.payload;
+    pixResultado.style.display = 'block';
+    pixResultado.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  } catch (err) {
+    alert('Erro de conexão. Tente novamente em instantes.');
+  } finally {
+    if (pixGerarBtn) {
+      pixGerarBtn.disabled = false;
+      pixGerarBtn.innerText = 'Gerar QR Code';
+    }
+  }
+}
+
+pixValorBtns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    const valor = this.getAttribute('data-valor');
+    gerarPix(valor);
+  });
+});
+
+if (pixGerarBtn) {
+  pixGerarBtn.addEventListener('click', function () {
+    const valor = pixValorInput.value;
+    if (!valor || Number(valor) <= 0) {
+      alert('Digite um valor válido.');
+      return;
+    }
+    gerarPix(valor);
+  });
+}
+
+if (pixCopiarBtn) {
+  pixCopiarBtn.addEventListener('click', function () {
+    navigator.clipboard.writeText(pixPayloadTexto.innerText).then(() => {
+      pixCopiarBtn.innerText = 'Copiado!';
+      setTimeout(() => { pixCopiarBtn.innerText = 'Copiar'; }, 2000);
+    });
+  });
+}
 });

@@ -205,43 +205,94 @@ blockquote {
   border-radius: 8px;
   padding: 30px;
 }
-.pix-card {
-  max-width: 600px;
-  margin: 0 auto;
+.pix-dinamico {
   background: #fff;
-  border: 1px solid rgba(142,124,195,0.2);
-  border-top: 4px solid var(--rosapadrao);
-  border-radius: 8px;
-  padding: 30px;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 480px;
+  margin: 24px auto;
 }
-.pix-chave {
+
+.pix-valores {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  background: #f3f0ff;
-  border: 1px dashed var(--lilaspadrao);
-  border-radius: 6px;
-  padding: 14px 18px;
-  margin: 15px 0;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.pix-valor-btn {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #d6006d;
+  background: #fff;
+  color: #d6006d;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pix-valor-btn:hover {
+  background: #d6006d;
+  color: #fff;
+}
+
+.pix-valor-custom {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
-.cta .btn {
-  margin-top: 25px; /* ajuste até o espaçamento ficar bom */
+
+.pix-valor-custom input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
-.cta p {
-  margin-bottom: 25px;
-}
-.btn-copiar {
-  background: var(--lilasdestaque);
-  color: var(--azul);
+
+#pix-gerar-btn {
+  background: #d6006d;
+  color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
+  padding: 10px 16px;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.pix-resultado {
+  text-align: center;
+}
+
+#pix-qrcode {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.pix-copia-cola {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f4e9f0;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.pix-copia-cola span {
+  font-family: monospace;
+  font-size: 12px;
+  flex: 1;
+  text-align: left;
+}
+
+.pix-copia-cola button {
+  background: #d6006d;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
 }
 .projeto-hero {
     background: var(--azul);
