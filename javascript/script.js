@@ -191,7 +191,7 @@ async function gerarPix(valor) {
   }
 
   try {
-    const resposta = await fetch('/.netlify/functions/gerar-pix', {
+    const resposta = await fetch('/.netlify/functions/gerarpix', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ valor })
