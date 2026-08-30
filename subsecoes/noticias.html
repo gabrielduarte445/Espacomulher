@@ -55,7 +55,7 @@
                 <span class="noticia-data">12 de junho de 2026</span>
                 <h3>Ação de acolhimento fortalece mulheres da comunidade</h3>
                 <p>Realizamos um encontro voltado ao acolhimento e escuta ativa de mulheres em situação de vulnerabilidade, fortalecendo vínculos e reforçando o apoio coletivo.</p>
-                <a href="#" class="noticia-link">Leia mais →</a>
+                <button class="noticia-link" data-noticia="1">Leia mais →</button>
                 </div>
                 </article>
 
@@ -68,7 +68,7 @@
                 <span class="noticia-data">12 de junho de 2026</span>
                 <h3>Campanha solidária apoia mulheres em tratamento de saúde</h3>
                 <p>Por meio de mobilização comunitária, conseguimos arrecadar recursos e apoio para mulheres que precisam se deslocar para tratamento médico. A ação contribuiu para garantir mais dignidade e cuidado durante esse processo.</p>
-                <a href="#" class="noticia-link">Leia mais →</a>
+                <button class="noticia-link" data-noticia="2">Leia mais →</button>
                 </div>
                 </article>
 
@@ -81,7 +81,7 @@
                 <span class="noticia-data">12 de junho de 2026</span>
                 <h3>Oficina promove autonomia e geração de renda</h3>
                 <p>Foi realizada uma oficina voltada à capacitação e geração de renda, incentivando o protagonismo feminino e a independência financeira. A atividade também fortaleceu a autoestima e a valorização pessoal das participantes.</p>
-                <a href="#" class="noticia-link">Leia mais →</a>
+                <button class="noticia-link" data-noticia="3">Leia mais →</button>
                 </div>
                 </article>
             </div>
@@ -94,6 +94,17 @@
             <p>© 2026 Espaço Mulher São Gabriel</p>
         </div>
     </footer>
+        <div class="noticia-modal" id="noticia-modal">
+        <div class="noticia-modal-overlay" id="noticia-modal-overlay"></div>
+        <div class="noticia-modal-conteudo">
+            <button class="noticia-modal-fechar" id="noticia-modal-fechar" aria-label="Fechar">✕</button>
+            <img id="modal-imagem" src="" alt="">
+            <span class="noticia-tag" id="modal-tag"></span>
+            <span class="noticia-data" id="modal-data"></span>
+            <h2 id="modal-titulo"></h2>
+            <div id="modal-texto"></div>
+        </div>
+        </div>
     <script src="../javascript/script.js"></script>
     <a href="https://wa.me/5574999631468?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">

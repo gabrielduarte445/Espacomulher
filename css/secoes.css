@@ -365,6 +365,71 @@ blockquote {
   color: var(--azul);
   text-decoration: underline;
 }
+/* --- MODAL DE NOTÍCIA --- */
+.noticia-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.noticia-modal.active {
+  display: flex;
+}
+
+.noticia-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.noticia-modal-conteudo {
+  position: relative;
+  background: #fff;
+  max-width: 640px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 32px;
+  z-index: 1001;
+}
+
+.noticia-modal-conteudo img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.noticia-modal-conteudo h2 {
+  margin: 12px 0 16px;
+}
+
+.noticia-modal-conteudo p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.noticia-modal-fechar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+button.noticia-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
 
 /* --- GRUPO DE ACORDEÕES --- */
 .acordeon-grupo {
