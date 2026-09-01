@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
  
-Sitemap: https://espacomulhersaogabriel.org.br/sitemap.xml
+Sitemap: https://espacomulhersaogabriel.ong.br/sitemap.xml

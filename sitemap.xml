@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.ong/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/subsecoes/quem-somos.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/subsecoes/quem-somos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/subsecoes/noticias.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/subsecoes/noticias.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/subsecoes/parceiros.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/subsecoes/parceiros.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/subsecoes/transparencia.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/subsecoes/transparencia.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/subsecoes/apoiar.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/subsecoes/apoiar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://espacomulhersaogabriel.org.br/subsecoes/contato.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/subsecoes/contato.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
    <url>
-    <loc>https://espacomulhersaogabriel.org.br/projetos/enfretamentoaviolencia.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/projetos/enfretamentoaviolencia.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
      <url>
-    <loc>https://espacomulhersaogabriel.org.br/projetos/rosas-do-sertao.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/projetos/rosas-do-sertao.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
      <url>
-    <loc>https://espacomulhersaogabriel.org.br/projetos/oficinageracaorenda.html</loc>
+    <loc>https://espacomulhersaogabriel.ong.br/projetos/oficinageracaorenda.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
