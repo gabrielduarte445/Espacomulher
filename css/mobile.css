@@ -136,6 +136,13 @@
     padding: 4px 8px;
   }
 
+  .parceiros-destaque {
+    grid-template-columns: 1fr;
+  }
+
+  .parceiros-lista {
+    grid-template-columns: 1fr;
+  }
  
   .menu-simbolo {
     display: block;
