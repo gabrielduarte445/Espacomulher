@@ -251,3 +251,46 @@ if (pixCopiarBtn) {
   });
 }
 });
+
+// --- CONTADOR ANIMADO "NOSSO IMPACTO" ---
+const contadores = document.querySelectorAll('.numero-contador');
+
+function animarContador(elemento) {
+  const alvo = parseInt(elemento.getAttribute('data-alvo'), 10);
+  const duracao = 2500; // duração total da animação em ms
+  const inicio = performance.now();
+
+  function passo(agora) {
+    const decorrido = agora - inicio;
+    const progresso = Math.min(decorrido / duracao, 1);
+    // easing suave no final (desacelera perto do fim)
+    const progressoSuave = progresso<0.5 
+    ? 2* progresso *   progresso  
+    : 1 - Math.pow(-2*progresso+2,2)/2;
+    
+    const valorAtual = Math.floor(progressoSuave * alvo);
+
+    elemento.innerText = '+' + valorAtual;
+
+    if (progresso < 1) {
+      requestAnimationFrame(passo);
+    } else {
+      elemento.innerText = '+' + alvo;
+    }
+  }
+
+  requestAnimationFrame(passo);
+}
+
+if (contadores.length > 0) {
+  const observador = new IntersectionObserver((entradas) => {
+    entradas.forEach(entrada => {
+      if (entrada.isIntersecting) {
+        animarContador(entrada.target);
+        observador.unobserve(entrada.target); // anima só uma vez
+      }
+    });
+  }, { threshold: 0.5 }); // dispara quando 50% do elemento estiver visível
+
+  contadores.forEach(contador => observador.observe(contador));
+}
