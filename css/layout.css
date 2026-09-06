@@ -193,14 +193,19 @@ p{
   text-decoration: none;
   font-weight: bold;
 }
+/* ==========================================================
+   Substitui os blocos .parceiros-categoria / .parceiros-lista /
+   .parceiro-logo-mini que já existem no secoes.css
+   ========================================================== */
+
 .parceiros-categoria {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 .parceiros-categoria h3 {
   color: #8E1249;
-  font-size: 1.1rem;
-  margin-bottom: 16px;
+  font-size: 1.15rem;
+  margin-bottom: 18px;
   border-bottom: 2px solid #F13D8C;
   padding-bottom: 6px;
   display: inline-block;
@@ -210,35 +215,60 @@ p{
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
 }
 
 .parceiros-lista li {
   background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 16px;
+  border: 1px solid #f0e4ea;
+  border-radius: 14px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.parceiros-lista li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(142, 18, 73, 0.08);
+}
+
+/* Container padronizado pra logo - círculo com fundo neutro */
 .parceiro-logo-mini {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 50%;
+  background: #FBF3F7;
+  border: 1px solid #f0e0ea;
+  padding: 8px;
+}
+
+/* Fallback quando não há logo: círculo com inicial do nome */
+.parceiro-sem-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F13D8C, #8E1249);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: Georgia, serif;
 }
 
 .parceiros-lista strong {
   color: #8E1249;
-  font-size: 1rem;
+  font-size: 1.02rem;
 }
 
 .parceiros-lista li span.parceiro-desc {
-  color: #555;
+  color: #666;
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
